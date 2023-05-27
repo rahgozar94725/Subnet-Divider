@@ -22,7 +22,7 @@ git clone https://github.com/rahgozar94725/Subnet-Divider.git
 2. Navigate to the repository directory:
 
 ```bash
-cd subnet-divider
+cd Subnet-Divider
 ```
 
 3. Make the script executable:
