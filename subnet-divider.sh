@@ -83,6 +83,8 @@ if [[ -f $input ]]; then
     fi
     # Convert CRLF to LF
     sed -i $'s/\r$//' $input
+    # Remove Empty Lines
+    sed -i '/^[[:space:]]*$/d' $input
     # Extract filename from input and add subnet_bits as suffix
     if [[ -z $output_file ]]; then
         filename="${input%.*}_${subnet_bits}.txt"
