@@ -53,7 +53,7 @@ Divide a single IP range:
 Extract IP ranges from a file, designate an output file, specify the desired subnet size, and divide the resulting output into multiple files, each containing 1000 lines:
 
 ```bash
-./subnet-divider.sh --input ip_ranges.txt --output output.txt --subnet 16 --lines 1000
+./subnet-divider.sh --input ip_ranges.txt --output output.txt --subnet 16 --lines 100
 ```
 
 ## Support
