@@ -4,11 +4,11 @@ Subnet Divider is a bash script that helps you divide IP ranges into smaller-siz
 
 ## Features
 
-- Divide IP ranges into smaller-sized subnets
+- Divides IP ranges into subnets
 - Supports both single IP ranges and an input file containing IP ranges split by new lines
 - User-specified subnet size
-- Output ranges into a file
-- Combine previous outputs by removing duplicate ranges and sorting them all together
+- Outputs subnets into a file
+- Combines previous outputs by removing duplicate ranges and sorting them all together
 - [Optional] Split the output file into multiple files based on a user-specified maximum number of lines per file
 
 ## Installation
@@ -50,7 +50,7 @@ Divide a single IP range:
 ./subnet-divider.sh -i 192.168.0.0/16
 ```
 
-Divide IP ranges from a file, specify an output file, subnet size, and split the output into 1000-line files:
+Extract IP ranges from a file, designate an output file, specify the desired subnet size, and divide the resulting output into multiple files, each containing 1000 lines:
 
 ```bash
 ./subnet-divider.sh --input ip_ranges.txt --output output.txt --subnet 16 --lines 1000
