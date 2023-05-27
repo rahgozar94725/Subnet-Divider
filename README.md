@@ -16,7 +16,7 @@ Subnet Divider is a bash script that helps you divide IP ranges into smaller-siz
 1. Clone the repository:
 
 ```bash
-git clone <https://github.com/your-username/subnet-divider.git>
+git clone https://github.com/your-username/subnet-divider.git
 ```
 
 2. Navigate to the repository directory:
