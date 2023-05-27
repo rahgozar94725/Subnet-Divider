@@ -81,6 +81,8 @@ if [[ -f $input ]]; then
         echo -e "${RED}Error: File '$input' is empty.${NC}"
         exit 1
     fi
+    # Convert CRLF to LF
+    sed -i $'s/\r$//' $input
     # Extract filename from input and add subnet_bits as suffix
     if [[ -z $output_file ]]; then
         filename="${input%.*}_${subnet_bits}.txt"
